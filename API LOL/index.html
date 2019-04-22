@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Javascript -->
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Consumir api fetch</title>
+  </head>
+ 
+
+
+
+  <body>
+   <!-- contenedor Bootstrap -->
+   <div class="container my-5 text-center">
+    <div class="form-group">
+       <!-- etiqueta formulario -->
+      <label for="nombreInvocador">Id Invocador</label>
+      <!-- formulario -->
+      <input type="text" class="form-control" id="nickname" placeholder="Introduce nickname">
+      <!-- etiqueta desplegable -->
+      <label for="nombreInvocador">Region</label>
+      <!-- desplegable regiones -->
+      <select class="form-control" id="region">
+        <option>RU</option>
+        <option>KR</option>
+        <option>BR1</option>
+        <option>OC1</option>
+        <option>JP1</option>
+        <option>NA1</option>
+        <option>EUN1</option>
+        <option>EUW1</option>
+        <option>TR1</option>
+        <option>LA1</option>
+        <option>LA2</option>
+
+      </select>
+    </div>
+
+     <button class="btn btn-danger w-100" onclick="traer()">Obtener</button>
+     <div class="mt-5" id="contenido">       
+        <!-- contenidoi de la api -->
+     </div>
+     <div class="mt-5" >       
+        <!-- contenidoi de la api -->
+        <table class="table" style="display: none;" id="tablaPartidas">
+          <thead>
+            <tr>
+              <th scope="col">Champ</th>
+              <th scope="col">Stats</th>
+              <th scope="col">Build</th>
+            </tr>
+          </thead>
+          <tbody id="partidas">
+            <tr>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+     </div>
+   </div>
+
+    
+  </body>
+</html>
